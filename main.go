@@ -2,14 +2,11 @@ package main
 
 import (
 	"fmt"
-	"os"
 
-	"apigo/cmd"
+	"github.com/Thefazai/apigo/cmd" // Import cmd package
 )
 
 func main() {
-	if err := cmd.Execute(); err != nil {
-		fmt.Println("Error:, err")
-		os.Exit(1)
-	}
+	fmt.Println("Starting CLI...")
+	cmd.Execute() // Run the CLI tool
 }
